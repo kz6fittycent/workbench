@@ -1,0 +1,10 @@
+Type=Application
+Version=1.0
+Name=scap-workbench
+GenericName=SCAP Tool
+Comment=A GUI tool that provides scanning, tailoring and validation functionality for SCAP content
+Icon=${SNAP}/meta/gui/icon.svg
+Exec=scap-workbench
+Terminal=true
+Categories=System;
+Keywords=system;
