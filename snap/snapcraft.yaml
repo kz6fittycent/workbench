@@ -26,7 +26,8 @@ parts:
     source: https://github.com/OpenSCAP/scap-workbench
     source-type: git
     plugin: cmake
-    configflags: ['-DCMAKE_INSTALL_PREFIX=/usr/local']
+    configflags: 
+      - -DCMAKE_INSTALL_PREFIX=/usr/local
 
     build-packages:
       - build-essential 
