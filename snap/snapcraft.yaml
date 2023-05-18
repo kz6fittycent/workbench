@@ -48,6 +48,7 @@ parts:
       - asciidoc
       - libpolkit-agent-1-0
       - pkg-config
+      - xcb
       
     override-pull: |
       snapcraftctl pull
