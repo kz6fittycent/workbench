@@ -51,6 +51,7 @@ parts:
       - xcb
       - libxcb1-dev
       - qt5dxcb-plugin
+      - libxcb-cursor0
       
     override-pull: |
       snapcraftctl pull
