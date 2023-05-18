@@ -17,8 +17,6 @@ compression: lzo
 apps:
   scap-workbench:
     command: usr/local/bin/scap-workbench
-    extensions:
-      - gnome-3-38     
     environment:
       LC_ALL: C.UTF-8
       LANG: C.UTF-8
