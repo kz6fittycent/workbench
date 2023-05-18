@@ -9,7 +9,7 @@ description: |
   
 license: GPL-3.0
 
-base: core18
+base: core20
 grade: stable
 confinement: classic
 compression: lzo
@@ -26,8 +26,8 @@ parts:
     source: https://github.com/OpenSCAP/scap-workbench
     source-type: git
     plugin: cmake
-    configflags:
-      - -CMAKE_INSTALL_PREFIX=/usr/bin
+    cmake-parameters:
+      - -DCMAKE_INSTALL_PREFIX=/usr/bin
       
     build-packages:
       - build-essential 
