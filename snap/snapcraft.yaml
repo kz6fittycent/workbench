@@ -9,7 +9,7 @@ description: |
   
 license: GPL-3.0
 
-base: core20
+base: core18
 grade: stable
 confinement: classic
 compression: lzo
