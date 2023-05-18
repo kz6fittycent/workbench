@@ -1,0 +1,54 @@
+name: scap-workbench
+adopt-info: scap-workbench
+summary: A GUI tool for SCAP content
+description: |
+  SCAP Workbench is a GUI tool that provides scanning, tailoring and validation functionality 
+  for SCAP content. It uses openscap library to access SCAP functionalities.
+  
+  Homepage of the project is https://www.open-scap.org/tools/scap-workbench/
+  
+license: GPL-3.0
+
+base: core20
+grade: stable
+confinement: classic
+compression: lzo
+
+apps:
+  scap-workbench:
+    command: usr/local/bin/scap-workbench
+    extensions:
+      - gnome-3-38     
+    environment:
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
+
+parts:
+  scap-workbench:
+    source: https://github.com/OpenSCAP/scap-workbench
+    source-type: git
+    plugin: make
+    make-parameters:
+      - PREFIX=/usr/local
+      
+    build-packages:
+      - build-essential 
+      - openssh-client 
+      - libopenscap-dev 
+      - libqt5xmlpatterns5-dev 
+      - ssh-askpass
+      - asciidoc
+      - libpolkit-agent-1-0
+      
+    stage-packages:
+      - build-essential 
+      - openssh-client 
+      - libopenscap-dev 
+      - libqt5xmlpatterns5-dev 
+      - ssh-askpass
+      - asciidoc
+      - libpolkit-agent-1-0    
+      
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
