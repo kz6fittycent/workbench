@@ -37,6 +37,7 @@ parts:
       - ssh-askpass
       - asciidoc
       - libpolkit-agent-1-0
+      - pkg-config
       
     stage-packages:
       - build-essential 
@@ -45,7 +46,8 @@ parts:
       - libqt5xmlpatterns5-dev 
       - ssh-askpass
       - asciidoc
-      - libpolkit-agent-1-0    
+      - libpolkit-agent-1-0
+      - pkg-config
       
     override-pull: |
       snapcraftctl pull
