@@ -49,6 +49,7 @@ parts:
       - libpolkit-agent-1-0
       - pkg-config
       - xcb
+      - libxcb1-dev
       
     override-pull: |
       snapcraftctl pull
