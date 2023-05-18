@@ -50,6 +50,7 @@ parts:
       - pkg-config
       - xcb
       - libxcb1-dev
+      - qt5dxcb-plugin
       
     override-pull: |
       snapcraftctl pull
