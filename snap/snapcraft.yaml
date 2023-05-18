@@ -27,7 +27,8 @@ parts:
     source-type: git
     plugin: cmake
     configflags:
-      - -DCMAKE_INSTALL_PREFIX=/usr/bin
+      - -CMAKE_INSTALL_PREFIX=/usr/bin
+      
     build-packages:
       - build-essential 
       - openssh-client 
