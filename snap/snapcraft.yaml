@@ -27,7 +27,7 @@ parts:
     source-type: git
     plugin: cmake
     cmake-parameters:
-      - -DCMAKE_INSTALL_PREFIX=/usr/local/bin
+      - -DCMAKE_INSTALL_PREFIX=/usr/local
       
     build-packages:
       - build-essential 
