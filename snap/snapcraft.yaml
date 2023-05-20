@@ -16,7 +16,7 @@ compression: lzo
 
 apps:
   scap-workbench:
-    command: usr/local/bin/scap-workbench
+    command: desktop-launch $SNAP/usr/local/bin/scap-workbench
     environment:
       LC_ALL: C.UTF-8
       LANG: C.UTF-8
