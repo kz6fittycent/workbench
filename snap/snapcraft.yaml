@@ -52,6 +52,23 @@ parts:
       - libxcb1-dev
       - qt5dxcb-plugin
       - libxcb-cursor0
+      - libx11-xcb1
+      - libxau6
+      - libxcb-glx0
+      - libxcb-icccm4
+      - libxcb-image0
+      - libxcb-keysyms1
+      - libxcb-randr0
+      - libxcb-render-util0
+      - libxcb-render0
+      - libxcb-shape0
+      - libxcb-shm0
+      - libxcb-sync1
+      - libxcb-util1
+      - libxcb-xfixes0
+      - libxdmcp6
+      - libxkbcommon-x11-0
+      - libxkbcommon0      
       
     override-pull: |
       snapcraftctl pull
